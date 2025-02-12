@@ -5,7 +5,7 @@
   "main": "server.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=production PORT=80 pm2 start ts-node server.ts -i 0",
-    "dev": "nodemon server",
+    "dev": "nodemon --exec ts-node server.ts",
     "test": "jest --watchAll --detectOpenHandles",
     "coverage": "jest --coverage"
   },
